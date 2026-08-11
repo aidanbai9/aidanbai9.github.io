@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects — Aidan Bai</title>
+<meta name="description" content="Projects by Aidan Bai, including a real-time cooperative Minesweeper game with a deterministic engine and complete tank solver.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23E9EBE2'/><rect x='6' y='6' width='20' height='20' fill='%232C7A4B'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&amp;family=Public+Sans:wght@400;500&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js" defer></script>
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="site-nav" aria-label="Primary">
+    <a href="/">Home</a>
+    <a href="/profiles/">Profiles</a>
+    <a href="/projects/" aria-current="page">Projects</a>
+  </nav>
+
+  <main>
+    <!-- ==================== PROJECTS ====================
+         Copy a whole <a class="project"> block to add another. -->
+    <section class="section">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <span class="count">02</span>
+      </div>
+
+      <a class="project" href="https://aidanbai9.github.io/minesweeper/" target="_blank" rel="noopener">
+        <h3>Minesweeper, together ↗</h3>
+        <p>
+          Real-time co-op Minesweeper. Deterministic board engine, a no-guess mode backed by a
+          complete tank solver, shared cursors over WebSockets, and a global leaderboard.
+        </p>
+        <div class="tags">
+          <span>WebSockets</span>
+          <span>Cloudflare Workers</span>
+          <span>Durable Objects</span>
+          <span>Vanilla JS</span>
+        </div>
+      </a>
+
+      <a class="project" href="https://github.com/aidanbai9/USACO-result-scraper" target="_blank" rel="noopener">
+        <h3>USACO result scraper ↗</h3>
+        <p>
+          Logs into USACO, follows contest and problem pages, reads submission results, and exports
+          each problem's contest, score, submission date, and link to a CSV file.
+        </p>
+        <div class="tags">
+          <span>Python</span>
+          <span>Requests</span>
+          <span>Beautiful Soup</span>
+          <span>lxml</span>
+        </div>
+      </a>
+
+    </section>
+
+    <section class="section scripts-section" aria-labelledby="scripts-title">
+      <div class="section-head">
+        <h2 id="scripts-title">Scripts</h2>
+        <span class="count" id="scripts-count">14</span>
+      </div>
+
+      <label class="sr-only" for="script-filter">Filter scripts by name or description</label>
+      <input class="script-filter" id="script-filter" type="search" placeholder="Filter scripts…" autocomplete="off">
+      <p class="sr-only" id="filter-status" aria-live="polite">14 scripts shown</p>
+
+      <div class="script-group" data-script-group>
+        <div class="section-head">
+          <h3>Games &amp; puzzles</h3>
+          <span class="count" data-group-count>06</span>
+        </div>
+        <div class="script-list">
+          <details class="script" data-name="all_ten_solver.cpp" data-description="Solves the AoPS All Ten arithmetic game.">
+            <summary class="script-row">
+              <span class="script-name">all_ten_solver.cpp</span>
+              <span class="script-description">Solves the AoPS “All Ten” arithmetic game.</span>
+              <span class="script-lines">90 lines</span>
+              <span class="script-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="source-panel" data-source="/scripts/all_ten_solver.cpp">
+              <div class="source-tools"><button class="copy-source" type="button" disabled>Copy</button></div>
+              <p class="source-state" aria-live="polite"></p>
+              <pre hidden><code class="language-cpp"></code></pre>
+            </div>
+          </details>
+
+          <details class="script" data-name="battleship.cpp" data-description="A single-player Battleship game with computer-placed ships.">
+            <summary class="script-row">
+              <span class="script-name">battleship.cpp</span>
+              <span class="script-description">A single-player Battleship game with computer-placed ships.</span>
+              <span class="script-lines">78 lines</span>
+              <span class="script-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="source-panel" data-source="/scripts/battleship.cpp">
+              <div class="source-tools"><button class="copy-source" type="button" disabled>Copy</button></div>
+              <p class="source-state" aria-live="polite"></p>
+              <pre hidden><code class="language-cpp"></code></pre>
+            </div>
+          </details>
+
+          <details class="script" data-name="guess_num.cpp" data-description="A basic number guessing game.">
+            <summary class="script-row">
+              <span class="script-name">guess_num.cpp</span>
+              <span class="script-description">A basic number guessing game.</span>
+              <span class="script-lines">28 lines</span>
+              <span class="script-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="source-panel" data-source="/scripts/guess_num.cpp">
+              <div class="source-tools"><button class="copy-source" type="button" disabled>Copy</button></div>
+              <p class="source-state" aria-live="polite"></p>
+              <pre hidden><code class="language-cpp"></code></pre>
+            </div>
+          </details>
+
+          <details class="script" data-name="minesweeper.cpp" data-description="Generates a random Minesweeper board.">
+            <summary class="script-row">
+              <span class="script-name">minesweeper.cpp</span>
+              <span class="script-description">Generates a random Minesweeper board.</span>
+              <span class="script-lines">122 lines</span>
+              <span class="script-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="source-panel" data-source="/scripts/minesweeper.cpp">
+              <div class="source-tools"><button class="copy-source" type="button" disabled>Copy</button></div>
+              <p class="source-state" aria-live="polite"></p>
+              <pre hidden><code class="language-cpp"></code></pre>
+            </div>
+          </details>
+
+          <details class="script" data-name="play_minesweeper.cpp" data-description="Generates a board and lets you play Minesweeper in the terminal.">
+            <summary class="script-row">
+              <span class="script-name">play_minesweeper.cpp</span>
+              <span class="script-description">Generates a board and lets you play Minesweeper in the terminal.</span>
+              <span class="script-lines">192 lines</span>
+              <span class="script-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="source-panel" data-source="/scripts/play_minesweeper.cpp">
+              <div class="source-tools"><button class="copy-source" type="button" disabled>Copy</button></div>
+              <p class="source-state" aria-live="polite"></p>
+              <pre hidden><code class="language-cpp"></code></pre>
+            </div>
+          </details>
+
+          <details class="script" data-name="tic_tac_toe.cpp" data-description="Plays tic-tac-toe optimally.">
+            <summary class="script-row">
+              <span class="script-name">tic_tac_toe.cpp</span>
+              <span class="script-description">Plays tic-tac-toe optimally.</span>
+              <span class="script-lines">159 lines</span>
+              <span class="script-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="source-panel" data-source="/scripts/tic_tac_toe.cpp">
+              <div class="source-tools"><button class="copy-source" type="button" disabled>Copy</button></div>
+              <p class="source-state" aria-live="polite"></p>
+              <pre hidden><code class="language-cpp"></code></pre>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <div class="script-group" data-script-group>
+        <div class="section-head">
+          <h3>Generators</h3>
+          <span class="count" data-group-count>06</span>
+        </div>
+        <div class="script-list">
+          <details class="script" data-name="rand_graph.cpp" data-description="Generates a random graph from node and edge counts.">
+            <summary class="script-row">
+              <span class="script-name">rand_graph.cpp</span>
+              <span class="script-description">Generates a random graph from node and edge counts.</span>
+              <span class="script-lines">82 lines</span>
+              <span class="script-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="source-panel" data-source="/scripts/rand_graph.cpp">
+              <div class="source-tools"><button class="copy-source" type="button" disabled>Copy</button></div>
+              <p class="source-state" aria-live="polite"></p>
+              <pre hidden><code class="language-cpp"></code></pre>
+            </div>
+          </details>
+
+          <details class="script" data-name="rand_tree.cpp" data-description="Generates a random tree from a node count.">
+            <summary class="script-row">
+              <span class="script-name">rand_tree.cpp</span>
+              <span class="script-description">Generates a random tree from a node count.</span>
+              <span class="script-lines">67 lines</span>
+              <span class="script-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="source-panel" data-source="/scripts/rand_tree.cpp">
+              <div class="source-tools"><button class="copy-source" type="button" disabled>Copy</button></div>
+              <p class="source-state" aria-live="polite"></p>
+              <pre hidden><code class="language-cpp"></code></pre>
+            </div>
+          </details>
+
+          <details class="script" data-name="merger_sponge.cpp" data-description="Prints a Menger sponge of a chosen size.">
+            <summary class="script-row">
+              <span class="script-name">merger_sponge.cpp</span>
+              <span class="script-description">Prints a Menger sponge of a chosen size.</span>
+              <span class="script-lines">54 lines</span>
+              <span class="script-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="source-panel" data-source="/scripts/merger_sponge.cpp">
+              <div class="source-tools"><button class="copy-source" type="button" disabled>Copy</button></div>
+              <p class="source-state" aria-live="polite"></p>
+              <pre hidden><code class="language-cpp"></code></pre>
+            </div>
+          </details>
+
+          <details class="script" data-name="hop_numbers.cpp" data-description="Draws ASCII numerals from the word hop.">
+            <summary class="script-row">
+              <span class="script-name">hop_numbers.cpp</span>
+              <span class="script-description">Draws ASCII numerals from the word “hop.”</span>
+              <span class="script-lines">77 lines</span>
+              <span class="script-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="source-panel" data-source="/scripts/hop_numbers.cpp">
+              <div class="source-tools"><button class="copy-source" type="button" disabled>Copy</button></div>
+              <p class="source-state" aria-live="polite"></p>
+              <pre hidden><code class="language-cpp"></code></pre>
+            </div>
+          </details>
+
+          <details class="script" data-name="binary_count.cpp" data-description="Prints the last a digits of the first b binary numbers.">
+            <summary class="script-row">
+              <span class="script-name">binary_count.cpp</span>
+              <span class="script-description">Prints the last a digits of the first b binary numbers.</span>
+              <span class="script-lines">32 lines</span>
+              <span class="script-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="source-panel" data-source="/scripts/binary_count.cpp">
+              <div class="source-tools"><button class="copy-source" type="button" disabled>Copy</button></div>
+              <p class="source-state" aria-live="polite"></p>
+              <pre hidden><code class="language-cpp"></code></pre>
+            </div>
+          </details>
+
+          <details class="script" data-name="discord_typer.cpp" data-description="Renders messages as Discord emoji text.">
+            <summary class="script-row">
+              <span class="script-name">discord_typer.cpp</span>
+              <span class="script-description">Renders messages as Discord emoji text.</span>
+              <span class="script-lines">133 lines</span>
+              <span class="script-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="source-panel" data-source="/scripts/discord_typer.cpp">
+              <div class="source-tools"><button class="copy-source" type="button" disabled>Copy</button></div>
+              <p class="source-state" aria-live="polite"></p>
+              <pre hidden><code class="language-cpp"></code></pre>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <div class="script-group" data-script-group>
+        <div class="section-head">
+          <h3>Math</h3>
+          <span class="count" data-group-count>02</span>
+        </div>
+        <div class="script-list">
+          <details class="script" data-name="phi.cpp" data-description="Computes Euler's totient function.">
+            <summary class="script-row">
+              <span class="script-name">phi.cpp</span>
+              <span class="script-description">Computes Euler’s totient function.</span>
+              <span class="script-lines">107 lines</span>
+              <span class="script-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="source-panel" data-source="/scripts/phi.cpp">
+              <div class="source-tools"><button class="copy-source" type="button" disabled>Copy</button></div>
+              <p class="source-state" aria-live="polite"></p>
+              <pre hidden><code class="language-cpp"></code></pre>
+            </div>
+          </details>
+
+          <details class="script" data-name="matrix_multiplier.cpp" data-description="Multiplies two matrices.">
+            <summary class="script-row">
+              <span class="script-name">matrix_multiplier.cpp</span>
+              <span class="script-description">Multiplies two matrices.</span>
+              <span class="script-lines">62 lines</span>
+              <span class="script-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="source-panel" data-source="/scripts/matrix_multiplier.cpp">
+              <div class="source-tools"><button class="copy-source" type="button" disabled>Copy</button></div>
+              <p class="source-state" aria-live="polite"></p>
+              <pre hidden><code class="language-cpp"></code></pre>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Built with plain HTML</span>
+    <a href="https://github.com/aidanbai9" target="_blank" rel="noopener">Source ↗</a>
+    <span style="margin-left:auto">© 2026</span>
+  </footer>
+
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var sourceCache = new Map();
+  var scripts = Array.from(document.querySelectorAll('.script'));
+  var groups = Array.from(document.querySelectorAll('[data-script-group]'));
+  var filter = document.getElementById('script-filter');
+  var totalCount = document.getElementById('scripts-count');
+  var filterStatus = document.getElementById('filter-status');
+
+  async function getSource(url) {
+    var cached = sourceCache.get(url);
+    if (typeof cached === 'string') return cached;
+    if (cached) return cached;
+
+    var pending = fetch(url).then(function (response) {
+      if (!response.ok) throw new Error('HTTP ' + response.status);
+      return response.text();
+    }).then(function (text) {
+      sourceCache.set(url, text);
+      return text;
+    }).catch(function (error) {
+      sourceCache.delete(url);
+      throw error;
+    });
+
+    sourceCache.set(url, pending);
+    return pending;
+  }
+
+  async function loadSource(details) {
+    var panel = details.querySelector('.source-panel');
+    if (panel.dataset.loaded === 'true' || panel.dataset.loading === 'true') return;
+
+    var state = panel.querySelector('.source-state');
+    var pre = panel.querySelector('pre');
+    var code = panel.querySelector('code');
+    var copyButton = panel.querySelector('.copy-source');
+    panel.dataset.loading = 'true';
+    state.classList.remove('source-error');
+    state.textContent = 'Loading…';
+
+    try {
+      var text = await getSource(panel.dataset.source);
+      code.textContent = text;
+      if (window.hljs) window.hljs.highlightElement(code);
+      panel.dataset.loaded = 'true';
+      panel._sourceText = text;
+      state.textContent = '';
+      pre.hidden = false;
+      copyButton.disabled = false;
+    } catch (error) {
+      state.classList.add('source-error');
+      state.textContent = 'Could not load source (' + error.message + '). Close and reopen to retry.';
+    } finally {
+      delete panel.dataset.loading;
+    }
+  }
+
+  async function copyText(text) {
+    if (navigator.clipboard && window.isSecureContext) {
+      try {
+        await navigator.clipboard.writeText(text);
+        return;
+      } catch (error) {
+        // Fall through for browsers that expose the API but deny the request.
+      }
+    }
+
+    var textarea = document.createElement('textarea');
+    textarea.value = text;
+    textarea.setAttribute('readonly', '');
+    textarea.style.position = 'fixed';
+    textarea.style.opacity = '0';
+    document.body.appendChild(textarea);
+    textarea.select();
+    var copied = document.execCommand('copy');
+    textarea.remove();
+    if (!copied) throw new Error('Clipboard unavailable');
+  }
+
+  scripts.forEach(function (details) {
+    details.addEventListener('toggle', function () {
+      if (details.open) loadSource(details);
+    });
+
+    var copyButton = details.querySelector('.copy-source');
+    copyButton.addEventListener('click', async function () {
+      var panel = details.querySelector('.source-panel');
+      try {
+        await copyText(panel._sourceText);
+        copyButton.textContent = 'Copied';
+        window.setTimeout(function () { copyButton.textContent = 'Copy'; }, 1400);
+      } catch (error) {
+        copyButton.textContent = 'Copy failed';
+        window.setTimeout(function () { copyButton.textContent = 'Copy'; }, 1800);
+      }
+    });
+  });
+
+  filter.addEventListener('input', function () {
+    var query = filter.value.trim().toLowerCase();
+    var visibleTotal = 0;
+
+    groups.forEach(function (group) {
+      var visibleInGroup = 0;
+      group.querySelectorAll('.script').forEach(function (details) {
+        var matches = (details.dataset.name + ' ' + details.dataset.description)
+          .toLowerCase().includes(query);
+        details.hidden = !matches;
+        if (matches) visibleInGroup += 1;
+      });
+      group.hidden = visibleInGroup === 0;
+      group.querySelector('[data-group-count]').textContent = String(visibleInGroup).padStart(2, '0');
+      visibleTotal += visibleInGroup;
+    });
+
+    totalCount.textContent = String(visibleTotal).padStart(2, '0');
+    filterStatus.textContent = visibleTotal + (visibleTotal === 1 ? ' script shown' : ' scripts shown');
+  });
+});
+</script>
+</body>
+</html>
